@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
   integral = (f(a) + f(b)) / 2.0;
   double t_inicio = omp_get_wtime();
 
-#pragma omp parallel for default(none) firstprivate(n, a, h) reduction(+ : integral) schedule(static) num_threads(4)
+#pragma omp parallel for default(none) firstprivate(n, a, h) reduction(+ : integral) schedule(static)
   for (long i = 1; i < n - 1; i++) {
     integral += f(a + i * h);
   }
