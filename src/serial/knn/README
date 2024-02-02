@@ -1,0 +1,20 @@
+Given a set of two-dimensional points _S_ divided intro _n_ groups, an integer _k_ and a twodimensional
+point _P_ to be classified, the k-Nearest Neighbors (KNN) algorithm can be
+used to solve the classification problem of the point _P_, i.e., classifying the point _P_ into
+one of the n existing groups based on some criteria.
+
+The KNN algorithm works by comparing the distances from each point _s_ ∈ S to the
+point _P_, then selecting the _k_ points with the smallest distance values and counting the
+frequency of each group in these _k_ points, the point _P_ is then classified to belong to the
+group with the highest frequency among the _k_ nearest points.
+
+An input represents the classification of a single point. The first line contains the pattern
+”n groups=n”, where _n_ is the total number of groups in this input. Then, for each of the _n_
+groups the following lines will be provided, the first line has the pattern ”label=c” where
+_c_ is a single character that represents the label (i.e., identification) of the group, then the
+second line follows the pattern ”length=L”, where _L_ is the number of two-dimensional
+points in this group and then, the next _L_ lines contain the pattern ”(x,y)” that represents
+each point that belongs to the aforementioned group. After all groups have been represented
+there’s a single line with the pattern ”k=k”, where _k_ is the parameter previously
+discussed. Lastly, the final line also contains the pattern ”(x,y)”, representing the coordinates
+to the two-dimensional point to be classified.
