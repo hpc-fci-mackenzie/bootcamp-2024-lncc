@@ -1,0 +1,13 @@
+Considere um experimento no qual é colocado uma fonte de calor de um lado de uma barra de ferro
+(considerar sempre com 1 m de comprimento) que elevava a temperatura em 0,0001 ºC a cada segundo.
+Considere também um método numérico hipotético para prever qual seria a temperatura na barra inteira
+a medida que o tempo fosse passando. Basicamente, esse método discretiza em n partes (100 ≤ n ≤
+100.000) a barra e calcula a nova temperatura pontualmente em cada intervalo.
+
+Esse método hipotético segue a seguinte equação:
+
+b_i=1/2 (αb_i+βb_(i+1) )
+
+onde b_i é a posição da i-ésima divisão da barra e α e β são fatores de correção no intervalo ]0,1].
+A extremidade da barra (local da fonte de calor) inicia com uma temperatura fixa T, informada pelo
+usuário e os demais pontos são considerados com valor (temperatura) ZERO.
