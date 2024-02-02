@@ -1,0 +1,3 @@
+Given a generic tree, your objective is to identify and calculate the path from the root to a
+leaf that has the largest sum of node values. Each node in the tree has an associated value,
+and a path is defined as a sequence of nodes from the root to a leaf.
