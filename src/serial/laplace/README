@@ -1,0 +1,13 @@
+The code implements a Jacobi iterative method that solves the Laplace equation for heat
+transfer. The Jacobi iterative method is a means for iteratively calculating the solution to a
+differential equation by continuously refining the solution until the answer has converged
+upon a stable solution or some fixed number of steps have completed and the answer is
+either deemed good enough or unconverged. The example code represents a 2D plane
+of material that has been divided into a grid of equally sized cells. As heat is applied
+to the center of this plane, the Laplace equation dictates how the heat will transfer from
+grid point to grid point over time. To calculate the temperature of a given grid point
+for the next time iteration, one simply calculates the average of the temperatures of the
+neighboring grid points from the current iteration. Once the next value for each grid point
+is calculated, those values become the current temperature and the calculation continues.
+At each step the maximum temperature change across all grid points will determine if the
+problem has converged upon a steady state.
