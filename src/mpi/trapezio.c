@@ -10,7 +10,7 @@ double f(double x)
 }
 
 int main(int argc, char *argv[])
-{                                    /* mpi_trapezio.c  */
+{
   int meu_ranque, num_procs;         /* respectivamente q e p */
   double a = 0.0, b = 1.0;           /* Limites da integral */
   double tempo_inicial, tempo_final; /* Tempo de execução */
